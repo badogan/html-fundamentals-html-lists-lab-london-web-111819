@@ -26,7 +26,7 @@ RSpec.describe 'index.html' do
   end
 
   it 'contains a <ol> tag' do
-    ol = parsed_html.search('<ol>').first
+    ol = parsed_html.search('ol').first
     expect(ol).to_not be_nil, "Your <ol> tag is missing"
     expect(html_file_contents).to include('</ol>'), "Don't forget to include a closing </ol>"
 
